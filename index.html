@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+   
+     
+    
+    <title>Cassino</title>  
+
+</head>
+<body>
+                   
+        <div class="container">            
+                
+            <div class="saldo-zerado">
+                <div id="sem-saldo">Sem saldo!</div>
+                <div><button id="jogar-novamente">Jogar Novamente</button></div>
+            </div>
+                   
+            <div class="anterior"></div>
+
+            <div class="saldo">
+                <div id="tipo-moeda">R$</div>
+                <div id="saldo-valor"></div>
+            </div>
+
+            <div class="roleta-controle">
+                <input type="number"  id="valor-input" oninput="valorValido()">                
+                <button class="btn-valorinput" id="tudo">tudo</button>
+                <button class="btn-valorinput" id="x2">x2</button>
+                <button class="btn-valorinput" id="metade">1/2</button>
+                <button id="btn-vermelho" class="selecionarCor">2x</button>
+                <button id ="btn-verde" class="selecionarCor">14x</button>
+                <button id ="btn-preto" class="selecionarCor">2x</button>
+                <button id="apostar">apostar</button>       
+                 
+            </div>
+            
+            <div class="roleta-container">
+                <div class="timer">
+                    <div class="time"></div>
+                    <div class="slider"></div>
+                </div>
+                                          
+                <div class="roleta">
+                    <div class="linha"></div>                   
+                    <div class="rolamento">                       
+                        <div class="carta"></div>                                  
+                    </div>
+                </div>       
+            </div>
+            <div class="info"> 
+                <div class="valor-vermelho"></div>   
+                <div class="valor-verde"></div>   
+                <div class="valor-preto"></div>   
+            </div>           
+
+           
+            <script src="./code.js"></script>
+</body>
+</html>
+

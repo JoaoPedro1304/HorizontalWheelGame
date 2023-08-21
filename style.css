@@ -1,0 +1,416 @@
+body{
+    background-color: rgb(24, 25, 34);       
+}
+.container{
+    position: relative;
+    display:flex;    
+    background-color: #181924 ;
+    margin-top: 50px;
+    margin-left:5%;  
+    width: 90%;
+    height: 520px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    
+}
+.timer{
+    margin-top: -250px;
+    padding: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 36px;    
+    background-color: rgb(36, 42, 56);    
+    position: absolute;   
+    z-index: 3;
+    border: 0.5px solid white;
+    border-radius: 5px;
+}
+.slider{    
+    display: flex;
+    margin-top: -1px;
+    margin-left:1px;
+    margin-right: 0%;
+    background-color: rgb(255, 48, 48);
+    width: 99.7%;
+    height: 65%;
+    border-radius: 5px;
+    transition-duration: 0;
+    transition-timing-function:none;   
+}
+.time{    
+    display:flex;
+    position: absolute;
+    font-size: 32px;
+    color: white;
+    z-index: 4;
+}
+.saldo-zerado{
+    position: absolute;
+    background-color: #181924f3;
+    flex-direction: column;    
+    font-size: 52px;
+    left: 45%;
+    top: 200px;
+    height: 200px;
+    width: 400px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    z-index: 3;
+    
+}
+#sem-saldo{
+    color:#ffffff;
+    margin-top: 10px;
+    left: 50%;
+    transform:translate(20%,0);
+}
+#jogar-novamente{
+    background-color:rgb(31, 139, 28);
+    color:white;
+    margin-top:50px;
+    height: 45px;
+    margin-left: 32.5%;
+    border-radius: 5px;    
+}
+
+.saldo{
+    display: flex;    
+    position: absolute;
+    align-content: center;
+    align-items: center;   
+    background-color:rgb(34, 36, 51);
+    top: 4px;
+    margin-left: 5%;
+    height: 45px;
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 5px;    
+}
+
+#saldo-valor{   
+    font-size:28px;
+    margin-left: 10px;   
+    margin-top:7px;    
+    color: white;
+    
+}
+#tipo-moeda{
+    font-size: 24px;
+    margin-left: 10%;
+    margin-top:7px;
+    color: rgb(172, 172, 172);
+    
+}
+.circulo-anterior{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.anterior{
+    display:flex;    
+    align-items: center;      
+    position: absolute;
+    background-color:rgb(34, 36, 51);
+    top: 4px;
+    left: 22%;    
+    height: 45px;
+    width: 75%;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.anterior-vermelho{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;  
+    background-color: rgb(230, 20, 20);
+    width: 40px;
+    height: 40px;    
+    border-radius: 5px;
+    margin:5px   
+}
+.anterior-preto{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #ffffff;  
+    background-color: rgb(15, 15, 15);    
+    border-radius: 5px;
+    margin:5px;   
+}
+.anterior-verde{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #ffffff;  
+    background-color: rgb(30, 194, 24);    
+    border-radius: 5px;
+    margin:5px;   
+}
+
+.roleta-controle{
+    display:flex;    
+    position: relative;
+    background-color: rgba(34, 36, 51,75%);
+    margin-top: 55px;
+    margin-left: 5px;      
+    width: 20%;
+    height: 450px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;    
+}
+
+#valor-input{     
+    font: 18px Arista Pro;
+    color:#ffffff;
+    background-color: #181924;
+    margin-top: 20px;
+    width: 45%;
+    height: 50px;
+    margin-left: 3px;
+    border:none;    
+    border-radius: 5px;
+    outline-style: none;    
+}
+
+#tudo{    
+    text-align: center;
+    color:white;
+    border-radius: 5px;
+    background-color: #181924;
+    font-size: 14px;
+    margin-top: 20px;
+    height: 50px;
+    width: 15%;
+    margin-left:5px; 
+}
+#x2{
+    background-color: #181924;
+    color:white;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 20px;
+    height: 50px;
+    width: 15%;
+    margin-left:5px; 
+}
+#metade{
+    background-color: #181924;
+    color:white;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 20px;
+    height: 50px;
+    width: 15%;
+    margin-left:5px;    
+}
+.btn-clicado{
+    outline:3px solid rgb(255, 255, 255);
+}
+#btn-vermelho{
+    padding-left:10%;
+    align-items: center; 
+    display:flex;
+    color:white;
+    position:absolute;
+    top: 120px;
+    left:5%;
+    background-color: rgb(230, 20, 20);
+    border: 1px solid #000000;    
+    border-radius:5px;
+    width:25%;
+    height: 50px;
+}
+#btn-verde{
+    padding-left:8%;
+    align-items: center;
+    display:flex;
+    color:white;
+    position:absolute;
+    top: 120px;
+    left: 35%;
+    background-color:rgb(30, 194, 24);
+    border:1px solid #000000;
+    border-radius:5px;
+    width:25%;
+    height: 50px;
+}
+#btn-preto{
+    padding-left:10%;
+    align-items: center;
+    display:flex;
+    color:white;
+    position:absolute;
+    top: 120px;
+    left: 65%;
+    background-color: black;
+    border:1px solid #000000;
+    border-radius:5px;
+    width:25%;
+    height: 50px;
+}
+#apostar{ 
+    left: 25%;
+    text-align: center;
+    font-size: 22px;
+    color:white;
+    background-color: rgb(206, 10, 59);
+    position: absolute;
+    width: 45%;
+    height: 35px;
+    margin-top:200px;
+    border: 1px solid white; 
+    border-radius: 5px;
+    transition: all 0.25s;
+}
+#apostar:hover{
+    cursor:pointer;
+}
+.apostar-click{
+    transform: scale(0.90);
+}
+
+.roleta-container{    
+    position: relative;
+    display: flex;  
+    background-color: rgba(34, 36, 51,75%);
+    margin-left: 5px;
+    margin-top: 55px;   
+    margin-right: 5px;   
+    width: 79%;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff;    
+    border-radius: 10px;
+}
+.roleta{    
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    width: 100%;
+    height: 125px;   
+    border: none;  
+    overflow: hidden;
+    background-color: rgb(24, 25, 34);    
+}
+
+.rolamento{       
+    display: flex;
+    transition-duration: 0;
+    transition-timing-function:cubic-bezier(0, 0, 0, 0);
+    transform: translate(0px,0px);
+}
+
+.carta{   
+    margin-left: 39148.5px;
+    display: flex;
+}
+.circulo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.vermelho{ 
+    display:flex;
+    justify-content: center;
+    align-items: center;     
+    font: 20px Arista Pro;
+    color: #ffffff;  
+    background-color: rgb(230, 20, 20);
+    width: 80px;
+    height: 80px;    
+    border-radius: 5px;
+    margin:5px    
+}
+.preto{ 
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    width: 80px;
+    height: 80px;
+    font: 20px Arista Pro;
+    color: #ffffff;  
+    background-color: rgb(15, 15, 15);    
+    border-radius: 5px;
+    margin:5px;    
+}
+.verde{ 
+    display:flex;
+    justify-content: center;
+    align-items: center;          
+    width: 80px;
+    height: 80px;
+    font: 20px Arista Pro;
+    color: #ffffff;  
+    background-color: rgb(30, 194, 24);    
+    border-radius: 5px;
+    margin:5px;    
+}
+
+.linha{
+    display: flex;
+    position:absolute;    
+    height: 125px;
+    width: 2px;
+    z-index: 2;
+    background-color: #ffffff;    
+}
+.valor-vermelho{
+    position: absolute;
+    display: flex;
+    height: 150px;
+    width: 350px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 550px;
+    margin-left: -100%;
+    z-index: 10;
+}
+.valor-verde{
+    position: absolute;
+    display: flex;
+    height: 150px;
+    width: 350px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 550px;
+    margin-left: -75%;
+    z-index: 10;
+}
+.valor-preto{
+    position: absolute;
+    display: flex;
+    height: 150px;
+    width: 350px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 550px;
+    margin-left: -50%;
+    z-index: 10;
+}
+.info{
+    justify-content: center;
+    align-content: center;
+}
+*{
+    box-sizing: border-box;
+}
+
+
+
+
